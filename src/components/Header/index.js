@@ -1,27 +1,23 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+
+const StyledHeader = styled.header`
+  grid-area: header;
+  background: rebeccapurple;
+`;
+
+const StyledLink = styled(Link)`
+  color: pink;
+  text-decoration: none;
+`;
 
 const Header = () => (
-  <div
-    style={{
-      gridArea: 'header',
-      background: 'rebeccapurple'
-    }}
-  >
-    <div>
-      <h1>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-        Header
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+  <StyledHeader>
+    <h1>
+      <StyledLink to="/">Header</StyledLink>
+    </h1>
+  </StyledHeader>
+);
 
-export default Header
+export default Header;
