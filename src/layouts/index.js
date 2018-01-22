@@ -15,7 +15,7 @@ const Template = styled.div`
     'header header header' 100px
     '. main .' auto
     'footer footer footer' 100px
-    / 1fr 90% 1fr;
+    / 1fr 10fr 1fr;
   width: 100%;
   height: 100%;
 `;
